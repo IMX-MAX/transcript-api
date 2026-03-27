@@ -54,9 +54,9 @@ def main(context):
                 fetched = ytt_api.fetch(video_id, languages=[try_lang])
                 segments = [
                     {
-                        "text": snippet.text,
-                        "start": snippet.start,
-                        "duration": snippet.duration,
+                        "text": snippet["text"],
+                        "start": snippet["start"],
+                        "duration": snippet["duration"],
                     }
                     for snippet in fetched
                 ]
@@ -84,9 +84,9 @@ def main(context):
                 fetched = t.fetch()
                 segments = [
                     {
-                        "text": snippet.text,
-                        "start": snippet.start,
-                        "duration": snippet.duration,
+                        "text": snippet["text"],
+                        "start": snippet["start"],
+                        "duration": snippet["duration"],
                     }
                     for snippet in fetched
                 ]
