@@ -1,0 +1,28 @@
+{
+  "projectId": "69928cbb002d9fe2510a",
+  "projectName": "transcript-api",
+  "settings": {
+    "services": {
+      "databases": false,
+      "functions": true,
+      "storage": false,
+      "users": false
+    }
+  },
+  "functions": [
+    {
+      "$id": "transcript-api",
+      "name": "transcript-api",
+      "runtime": "python-3.10",
+      "path": ".",
+      "entrypoint": "main.py",
+      "execute": [],
+      "events": [],
+      "schedule": "",
+      "timeout": 60,
+      "enabled": true,
+      "logging": true,
+      "vars": {}
+    }
+  ]
+}
